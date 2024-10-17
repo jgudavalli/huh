@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+ /* background-color: #ADD8E6; /* Light blue background for the entire page */
+ background-image: 
+		linear-gradient(120deg, #caeff2 0%, #a2c2ee 100%); 
+  
+}
+
+header {
+  /*background-color: #000080; /* Dark blue background for the menu area */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+
+/*nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+ /* align-items: center; /* Align items vertically in the navbar 
+/*  padding-left: 20px; /* Add left padding to the navbar 
+}*/
+
+/*.menu-text {
+  font-weight: bold;
+  color: #333333;
+  font-size: 50px; 
+  margin-left: 30px; 
+}*/
+
+/*.menu-text {
+  display: flex;
+ /* align-items: center;
+}
+
+.menu-text span {
+  font-weight: bold;
+  color: #333333;
+  font-size: 20px; /* Adjust font size as needed 
+  margin-right: 20px; /* Add right margin 
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+
+
+
+nav a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+ background-color: gray; /* Darken the background on hover 
+}*/
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 8vh; /* Adjust width of the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add right margin */
+  overflow: hidden;
+  margin-left:20vh;
+}
+
+.menu-text {
+  display: flex;
+  align-items: center;
+}
+
+.menu-text span {
+ /* font-weight: bold;
+  color: #333333;
+  font-size: 20px; /* Adjust font size as needed */
+  font-size: 32px;
+  background: -webkit-linear-gradient(#eee, #333);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-items li {
+  margin-right: 20px;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-items a:hover {
+  background-color: gray;
+}
+main {
+  min-height: 100vh-45px;
+  min-width:100vh;
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  justify-content: center;
+  align-items:center;
+  /*background-color: #f0f0f0; /* Light gray background for the main content */
+}
+
+.container {
+  /*text-align: center;*/
+  width: calc(100vw - 5px);
+  height: 30vh; /* Set height of container to 50% of viewport height */
+  overflow: hidden; /* Hide overflow */
+}
+
+.container img {
+  width: 100%; /* Make the image fill the container horizontally */
+  height: 100%;
+  object-fit: cover; /* Ensure image fills container */
+  border-radius: 5px;
+}
+
+.container h2 {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+ .container1 {
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  justify-content: center;
+  margin-top: 20px; /* Add margin between image and boxes */
+}
+
+.box1 {
+  flex: 1;
+  height: 30vh;
+  width: 50vh;
+  margin: 15px;
+  padding: 40px;
+  
+  text-align: center;
+  /*border: 2px solid #ccc;*/
+  border: none;
+   
+}
+
+.box2 {
+  flex: 1;
+  height: 30vh;
+  width: 40vh;
+  margin: 15px;
+  padding: 50px;
+  
+  
+  /*border: 2px solid #ccc;*/
+  border: none;
+   
+}
+
+.centeredbox1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+footer {
+   position: fixed;
+  bottom: 0;
+  width: 100%;
+  /*background-color: #333333;*/
+  color: #333333;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/*contact form  sytle is below*/
+
+/* Style inputs with type="text", select elements and textareas */
+/*.contcontainer {
+  text-align: left;
+  width: 100vh;
+  height:auto; /* Set height of container to 50% of viewport height */
+/*  margin-top: 20px; 
+  overflow: hidden; }/* Hide overflow */
+
+
+
+/* style.css */
+
+
+
+/*.contcontainer { 
+	text-align: left;
+    width: 100vh;
+    height: auto;
+	font-family: 'Poppins', sans-serif; 
+	margin: 0; 
+	padding: 0; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	margin-top: 5px;
+	border: 1px solid grey;
+	/*min-height: 100vh; 
+	
+   } */
+   
+   
+   .contcontainer {
+  width: 100vw; /* Occupy full viewport width */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 5px;
+  border: 1px solid grey;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width calculation */
+ 
+}
+
+
+.ffbox { 
+	display: flex; 
+	width: 80%; 
+	max-width: 800px; 
+	/*background-color: #fff; */
+	border: 3px solid #e4e4e9; 
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+	overflow: hidden; 
+	border-radius: 10px; 
+	flex-wrap: wrap; 
+} 
+
+.ffbox1 { 
+	flex: 1; 
+	padding: 20px; 
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+} 
+
+.ffbox1 label { 
+	display: block; 
+	margin-bottom: 8px; 
+} 
+
+.ffbox1 input, 
+.ffbox1 textarea { 
+	width: 100%; 
+	padding: 8px; 
+	margin-bottom: 16px; 
+	box-sizing: border-box; 
+	border-radius: 15px; 
+	background-color: #dcdce1; 
+	border: none; 
+} 
+
+.ffbox1 textarea { 
+	resize: vertical; 
+} 
+
+.ffbox1 { 
+	margin-bottom: 16px; 
+} 
+
+.ffbox1 label { 
+	margin-right: 16px; 
+} 
+
+.map-div { 
+	flex: 1; 
+	background-color: #eee; 
+} 
+
+button { 
+	width: 50%; 
+	padding: 8px; 
+	margin-bottom: 16px; 
+	box-sizing: border-box; 
+	border-radius: 15px; 
+	/*background-color:#a2c2ee;*/
+	color:black;
+	font-size: 17px; 
+	font-weight: 700; 
+	border: #a2c2ee; 
+} 
+
+button:hover { 
+	background-color:#8cbed6;
+} 
+
+.map-div iframe { 
+	border: 0; 
+	padding: 10px; 
+} 
+
+.hwh { 
+	text-align: centre; 
+	color: #87CEEB;
+} 
+
+.map-div { 
+	background-color: rgb(152, 178, 234); 
+}
+
+
+.additional-info {
+  flex: 1;
+  max-width: calc(40% - 40px); /* Adjust the width as needed */
+  padding: 20px;
+ /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+  /*background-color: #fff;*/
+  margin-left: 20px;
+}
+
+.additional-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.additional-info p {
+  margin-bottom: 10px;
+}
+
+
+/* additional styling ofr about container*/
+
+ .aboutcontainer {
+  width: 80vw; /* Occupy full viewport width */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width calculation */
+ 
+}

@@ -1,0 +1,81 @@
+/* Reset styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: brown;
+}
+
+body {
+  font-family: Arial, sans-serif;
+   color: brown;
+}
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Added padding to create space */
+}
+
+nav {
+  position: relative;
+  top: 20px; /* Move the menu down by 20px from the top */
+  right: 20px; /* Move the menu 20px from the right */
+  display: flex;
+  justify-content: flex-end; /* Align menu items to the right */
+}
+
+nav ul {
+  list-style: none;
+  display: flex; /* Display menu items horizontally */
+}
+
+nav ul li {
+  margin-left: 10px; /* Adjust margin between menu items */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #eeeeee;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 300px);
+  background-color: #f0f0f0;
+}
+
+.Container {
+  text-align: center;
+  margin-top: 20px; /* Adjust margin to create space between menu and image */
+  width: 90%; /* Set container width to 90% */
+  max-width: 1200px; /* Set maximum width of the container */
+  margin-left: auto; /* Center the container horizontally */
+  margin-right: auto; /* Center the container horizontally */
+}
+
+.Container img {
+  width: 100%; /* Set image width to 90% of the container */
+  max-height: 50vh; /* Set maximum height to 40% of viewport height */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  line-height: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  background-color: #333333;
+  color: #ffffff;
+}

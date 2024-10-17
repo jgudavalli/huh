@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/test4.css">
+<link rel="stylesheet" 
+          href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+          integrity= 
+"sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" /> 
+<title>Homeopathy with Himaja</title>
+</head>
+<body>
+<header>
+<nav>
+	<div class="logo-container">
+  <img src="/images/logo.png" alt="Logo" class="logo">
+  <div class="menu-text">
+    <span>Homeopathic Healing</span>
+  </div>
+</div>
+<ul class="menu-items">
+  <li><a href="/test">Home</a></li>
+  <li><a href="/cases">Case Studies</a></li>
+  <li><a href="/ab">About</a></li>
+  <li><a href="/ct">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+
+
+<div class="contcontainer"> 
+ 
+    <div class="ffbox"> 
+        <div class="ffbox1"> 
+            <h1 >Homeo With Himaja</h1> 
+            <h2 >Contact Us</h2> 
+            <form action="/ct" method="post" th:action="@{/ctsuccess}" th:object="${feedback}"> 
+                <label for="fullName"> 
+                    <i class="fa fa-solid fa-user" 
+                       style="margin: 2px;"> 
+                    </i> Full Name: 
+                </label> 
+                <input type="text" 
+                       id="fullName" 
+                       name="fullName" required> 
+  
+                <label for="email"> 
+                    <i class="fa fa-solid fa-envelope" 
+                       style="margin: 2px;"> 
+                    </i> 
+                    Email Address: 
+  
+                </label> 
+                <input type="email"
+                       id="email" 
+                       name="email" required> 
+  
+                <label for="mobile"> 
+                    <i class=" fa fa-solid fa-phone" 
+                       style="margin: 2px;"> 
+                    </i> 
+                    Contact No: 
+                </label> 
+                <input type="tel"
+                       id="mobile" 
+                       name="mobile" required> 
+  
+                <label for="msg"> 
+                    <i class=" fa fa-solid fa-comment" 
+                       style="margin: 2px;"> 
+                    </i> 
+                    Write Message: 
+                </label> 
+                <textarea id="msg" 
+                          name="msg" 
+                          rows="5" required> 
+                </textarea> 
+  
+                <button type="submit"> 
+                    Submit 
+                </button> 
+            </form> 
+        </div> 
+        <div class="map-div"> 
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.2532539776894!2d78.50365161127314!3d17.399629783420743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99ab374a7a1d%3A0xc11d56fdf1b19581!2sSreerama%20Homoeo%20World%20Stores%20Clinic!5e0!3m2!1sen!2sus!4v1710795175154!5m2!1sen!2sus"
+			 width="370" height="95%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div> 
+        
+        
+    </div>
+    
+    <div class="additional-info">
+      <h3>Additional Information</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor eget justo sed tempor. Vestibulum tristique ante nec dolor imperdiet, in tempus sapien posuere.</p>
+      <p>Maecenas pulvinar euismod nisi, vel maximus nisi accumsan et. Nullam eget gravida velit. Sed sed justo eget ipsum tincidunt blandit.</p>
+      <p>Integer convallis, enim et fringilla molestie, ligula turpis viverra tortor, sed consequat libero elit ut eros. Nam ut odio non erat cursus luctus.</p>
+    </div>
+
+</div>
+
+</main>
+<footer>
+<p>© Copyright 2024 Homeo with Himaja.</p>
+</footer>
+</body>
+</html>

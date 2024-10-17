@@ -1,0 +1,85 @@
+
+
+.awesome {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+  border: 5px solid;
+  padding: 2rem;
+
+  /* The important extrinsic width */
+  width: min-content;
+}
+
+.box {
+  outline: 50px solid var(--color-primary-dark);
+}
+
+/*
+Presentational styles 
+*/
+.awesome {
+  --flow-space: 2rem;
+}
+
+
+.box-demo {
+  width: max-content;
+  height: 50px;
+}
+
+.box-layout {
+  display: grid;
+  width: max-content;
+  gap: 0.5rem;
+  grid-template-columns: 1fr min-content;
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+img{
+height: 300px;
+border-radius: 50%;
+border: 12px dotted rgb(255, 85, 0);
+}
+
+img:hover{
+border: 12px dotted blue;
+}
+
+.blueBorder{
+	border: 12px solid blue;
+}
+
+div{
+background-color: bisque;
+border: 10px solid rgb(232, 69, 69);
+border-radius: 2%;
+height: 50vh;
+width: 50vh;
+}
